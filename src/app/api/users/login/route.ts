@@ -38,7 +38,7 @@ export async function POST(request: NextRequest){
 
         //email token
 
-        const token = await jwt.sign(tokenData, process.env.JWT_SECRET_KEY, {expriresIn: "1h"})
+        const token = await jwt.sign(tokenData, process.env.TOKEN_SECRET!, { expiresIn: "1h" })
 
     } catch (error: any) {
         return NextResponse.json({error: error.message}, {status: 500})
