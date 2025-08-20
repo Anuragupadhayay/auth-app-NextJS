@@ -2,8 +2,6 @@ import { connect } from "@/dbConfig/dbConfig";
 import User from "@/models/userModels"
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import { error } from "console";
-import { Passions_Conflict } from "next/font/google";
 
 
 connect()
